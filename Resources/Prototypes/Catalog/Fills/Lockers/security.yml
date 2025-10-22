@@ -130,6 +130,7 @@
     - id: Wrench # Goobstation
     - id: ContrabandDetectorFlatpack # Goobstation
     - id: SecurityMegaphone # goob - loudspeakers
+    - id: BoxBodyBagPrisoner # Orion
 
 - type: entityTable
   id: FillLockerWardenHarduit
@@ -209,7 +210,7 @@
       prob: 0.1
     - id: MedkitOxygenFilled
     - id: MedkitAdvancedFilled
-    - id: BoxBodyBag # Goob Station
+    - id: BoxBodyBagPrisoner # Orion
 
 - type: entity
   id: LockerDetectiveFilled
