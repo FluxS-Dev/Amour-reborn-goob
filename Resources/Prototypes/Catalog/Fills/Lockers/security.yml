@@ -210,7 +210,8 @@
       prob: 0.1
     - id: MedkitOxygenFilled
     - id: MedkitAdvancedFilled
-    - id: BoxBodyBagPrisoner # Orion
+    - id: BoxSyringe
+    - id: BoxBodyBagPrisoner # Goob Station | Orion-Edit
 
 - type: entity
   id: LockerDetectiveFilled
