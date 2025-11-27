@@ -1175,6 +1175,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("ghost_color");
 
+                    b.Property<string>("Icon")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("icon");
+
                     b.Property<bool>("LobbyMessage")
                         .HasColumnType("INTEGER")
                         .HasColumnName("lobby_message");
