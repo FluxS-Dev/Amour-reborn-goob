@@ -1,4 +1,4 @@
-custom-lawboard-ui-title = эксперементальная плата законов
+custom-lawboard-ui-title = экспериментальная плата законов
 
 custom-lawboard-up-arrow = ↑
 custom-lawboard-down-arrow = ↓
