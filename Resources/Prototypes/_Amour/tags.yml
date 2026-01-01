@@ -1,0 +1,8 @@
+- type: Tag
+  id: Underwear
+
+- type: Tag
+  id: Undershirt
+
+- type: Tag
+  id: Socks

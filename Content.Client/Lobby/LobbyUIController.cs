@@ -132,7 +132,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     private HumanoidProfileEditor? _profileEditor;
     private CharacterSetupGuiSavePanel? _savePanel;
 
-    private static readonly string[] UnderwearSlots = ["underwear", "undershirt", "socks"]; // Orion
+    private static readonly string[] UnderwearSlots = ["UNDERWEAR", "UNDERSHIRT", "SOCKS"]; // Amour
 
     /// <summary>
     /// This is the characher preview panel in the chat. This should only update if their character updates.

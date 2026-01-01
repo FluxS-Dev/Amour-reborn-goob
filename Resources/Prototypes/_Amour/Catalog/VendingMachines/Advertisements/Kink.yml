@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: KinkMachineAds
+  values:
+    prefix: advertisement-kink-
+    count: 2
