@@ -42,14 +42,14 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_plasma_window.rsi
+    sprite: _Amour/Structures/Windows/reinforced_plasma_window.rsi
   - type: Icon
-    sprite: Structures/Windows/reinforced_plasma_window.rsi
+    sprite: _Amour/Structures/Windows/reinforced_plasma_window.rsi
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
   - type: RadiationBlocker
-    resistance: 10 # Goobstation - Radiation Overhaul
+    resistance: 10
   - type: Destructible
     thresholds:
     - trigger:
@@ -89,7 +89,7 @@
     damageDivisor: 6
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Amour/Structures/Windows/cracks.rsi
   - type: StaticPrice
     price: 132
 
@@ -104,10 +104,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Amour/Structures/Windows/directional.rsi
     state: plasma_reinforced_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Amour/Structures/Windows/directional.rsi
     state: plasma_reinforced_window
   - type: Construction
     graph: WindowDirectional
@@ -118,11 +118,11 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks_directional.rsi
+      sprite: _Amour/Structures/Windows/cracks_directional.rsi
   - type: Damageable
     damageModifierSet: RGlass
   - type: RadiationBlocker
-    resistance: 5 # Goobstation - Radiation Overhaul
+    resistance: 5
   - type: Destructible
     thresholds:
     - trigger:
@@ -164,17 +164,17 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_plasma_diagonal.rsi
+    sprite: _Amour/Structures/Windows/reinforced_plasma_diagonal.rsi
     state: state0
   - type: Tag
     tags:
     - Diagonal
   - type: IconSmooth
     mode: Diagonal
-    key: walls # Orion-Edit
+    key: windows
     base: state
   - type: Icon
-    sprite: Structures/Windows/reinforced_plasma_diagonal.rsi
+    sprite: _Amour/Structures/Windows/reinforced_plasma_diagonal.rsi
     state: state0
   - type: Fixtures
     fixtures:
@@ -197,7 +197,8 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: _Amour/Structures/Windows/cracks_diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: reinforcedPlasmaWindowDiagonal
+

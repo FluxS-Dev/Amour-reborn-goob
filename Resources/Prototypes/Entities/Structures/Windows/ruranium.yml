@@ -27,9 +27,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_uranium_window.rsi
+    sprite: _Amour/Structures/Windows/reinforced_uranium_window.rsi
   - type: Icon
-    sprite: Structures/Windows/reinforced_uranium_window.rsi
+    sprite: _Amour/Structures/Windows/reinforced_uranium_window.rsi
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -69,11 +69,11 @@
     damageDivisor: 6
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Amour/Structures/Windows/cracks.rsi
   - type: StaticPrice
     price: 215
   - type: RadiationBlocker
-    resistance: 20 # Goobstation - Radiation Overhaul
+    resistance: 20
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
     convertTo: WindowCosmicCult
 
@@ -88,10 +88,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Amour/Structures/Windows/directional.rsi
     state: uranium_reinforced_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Amour/Structures/Windows/directional.rsi
     state: uranium_reinforced_window
   - type: Construction
     graph: WindowDirectional
@@ -102,7 +102,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks_directional.rsi
+      sprite: _Amour/Structures/Windows/cracks_directional.rsi
   - type: Damageable
     damageModifierSet: RGlass
   - type: Destructible
@@ -133,7 +133,7 @@
   - type: StaticPrice
     price: 110
   - type: RadiationBlocker
-    resistance: 10 # Goobstation - Radiation Overhaul
+    resistance: 10
 
 - type: entity
   parent: ReinforcedUraniumWindow
@@ -146,17 +146,17 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
+    sprite: _Amour/Structures/Windows/reinforced_uranium_diagonal.rsi
     state: state0
   - type: Tag
     tags:
     - Diagonal
   - type: IconSmooth
     mode: Diagonal
-    key: walls # Orion-Edit
+    key: windows
     base: state
   - type: Icon
-    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
+    sprite: _Amour/Structures/Windows/reinforced_uranium_diagonal.rsi
     state: state0
   - type: Fixtures
     fixtures:
@@ -178,7 +178,8 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: _Amour/Structures/Windows/cracks_diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: reinforcedUraniumWindowDiagonal
+

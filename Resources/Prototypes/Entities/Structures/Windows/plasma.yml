@@ -39,9 +39,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plasma_window.rsi
+    sprite: _Amour/Structures/Windows/plasma_window.rsi
   - type: Icon
-    sprite: Structures/Windows/plasma_window.rsi
+    sprite: _Amour/Structures/Windows/plasma_window.rsi
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass
@@ -81,11 +81,11 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Amour/Structures/Windows/cracks.rsi
   - type: StaticPrice
     price: 100
   - type: RadiationBlocker
-    resistance: 2.5 # Goobstation - Radiation Overhaul
+    resistance: 2.5
   - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 75
     damagePenalty: 0.1
@@ -103,10 +103,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Amour/Structures/Windows/directional.rsi
     state: plasma_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Amour/Structures/Windows/directional.rsi
     state: plasma_window
   - type: Construction
     graph: WindowDirectional
@@ -117,7 +117,7 @@
     damageDivisor: 1.5
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks_directional.rsi
+      sprite: _Amour/Structures/Windows/cracks_directional.rsi
   - type: Destructible
     thresholds:
     - trigger:
@@ -146,7 +146,7 @@
   - type: StaticPrice
     price: 50
   - type: RadiationBlocker
-    resistance: 2.444 # Goobstation - Radiation Overhaul
+    resistance: 2.444
   - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 50
     damagePenalty: 0.1
@@ -162,17 +162,17 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plasma_diagonal.rsi
+    sprite: _Amour/Structures/Windows/plasma_diagonal.rsi
     state: state0
   - type: Tag
     tags:
     - Diagonal
   - type: IconSmooth
     mode: Diagonal
-    key: walls # Orion-Edit
+    key: windows
     base: state
   - type: Icon
-    sprite: Structures/Windows/plasma_diagonal.rsi
+    sprite: _Amour/Structures/Windows/plasma_diagonal.rsi
     state: state0
   - type: Fixtures
     fixtures:
@@ -194,7 +194,8 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: _Amour/Structures/Windows/cracks_diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: plasmaWindowDiagonal
+
