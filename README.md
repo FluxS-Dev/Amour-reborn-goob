@@ -3,7 +3,7 @@
 ---
 
 
-Amour - форк Einstein Engines, представляющего из себя хард-форк  [Space Station 14](https://github.com/space-wizards/space-station-14), построенный на идеалах и дизайнерском вдохновении семейства серверов BayStation 12 от Space Station 13 с упором на модульный код, который каждый может использовать для создания RP-сервера своей мечты.
+Amour - это русскоязычный форк [Goob Station](https://github.com/Goob-Station/Goob-Station).
 
 Space Station 14 - это ремейк SS13, который работает на собственном движке  [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), собственном игровом движке, написанном на C#.
 
